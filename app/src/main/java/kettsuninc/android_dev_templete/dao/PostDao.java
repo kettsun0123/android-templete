@@ -31,4 +31,13 @@ public class PostDao extends AbstractDao<PostApi> {
 
                 });
     }
+
+    public void getPost(String id) {
+        Observable<PostEntity> observable = getApi().getPost(id);
+        observable.subscribeOn(Schedulers.newThread())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(postEntity -> {
+                   //ここにpostEntityを受け取った時の処理
+                });
+    }
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import kettsuninc.android_dev_templete.entity.PostEntity;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 import rx.Observable;
 
@@ -15,5 +16,10 @@ public interface PostApi {
     @GET("posts")
     Observable<List<PostEntity>> getPosts(
             @Query("dayOfWeek") int dayOfWeek
+    );
+
+    @GET("posts/{id}")
+    Observable<PostEntity> getPost(
+            @Path("id") String id
     );
 }
