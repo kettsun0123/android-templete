@@ -1,4 +1,4 @@
-package kettsuninc.android_dev_templete.model.entity;
+package kettsuninc.android_dev_templete.entity;
 
 import java.util.Date;
 import java.util.List;

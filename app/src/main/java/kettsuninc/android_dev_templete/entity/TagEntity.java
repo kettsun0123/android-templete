@@ -1,4 +1,4 @@
-package kettsuninc.android_dev_templete.model.entity;
+package kettsuninc.android_dev_templete.entity;
 
 /**
  * Created by yuji on 16/09/11.

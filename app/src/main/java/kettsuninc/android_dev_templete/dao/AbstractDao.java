@@ -1,4 +1,4 @@
-package kettsuninc.android_dev_templete.model.dao;
+package kettsuninc.android_dev_templete.dao;
 
 import retrofit2.Retrofit;
 
